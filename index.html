@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- Navigation Bar -->
+
 <nav class="navbar">
   <div class="navdiv">
     <div class="logo"><a href="#">BranDon</a></div>
@@ -22,23 +22,22 @@
   </div>
 </nav>
 
-<!-- Menu Icon -->
+
 <span class="menu-icon" onclick="toggleDropdown()">&#9776;</span>
 
-<!-- Top Dropdown Navigation -->
+
 <div id="dropdownMenu" class="dropdown-nav">
-  <a href="#">About</a>
-  <a href="#">Projects</a>
-  <a href="#">Contact</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<!-- Profile Section -->
+
 <div class="container">
   <div class="img">
     <img src="img/ProfileA-removebg-preview.png" alt="Profile Picture">
   </div>
   <div class="profile-sidebar">
-    <div class="Intro">
+    <div class="Intro" id="about">
       <p><strong>Hello, I’m</strong></p>
       <p><strong>Brandon Rueda</strong></p>
       <p>Programmer / Designer</p>
@@ -49,7 +48,6 @@
 
 <div class="section-divider"></div>
 
-<!-- Services Section -->
 <div class="services-section">
   <h2>My Services</h2>
   <p>What I am Providing?</p>   
@@ -72,8 +70,8 @@
 
 <div class="section-divider"></div>
 
-<!-- Contact Section -->
-<section class="contact-section">
+
+<section class="contact-section" id="contact">
   <div class="contact-card">
     <h3>Facebook</h3>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Brandon Rueda</a>
@@ -88,12 +86,19 @@
   </div>
 </section>
 
-<!-- JavaScript -->
+
 <script>
   function toggleDropdown() {
     const dropdown = document.getElementById("dropdownMenu");
     dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
   }
+
+  window.addEventListener("resize", () => {
+    const dropdown = document.getElementById("dropdownMenu");
+    if (window.innerWidth > 768 && dropdown.style.display === "flex") {
+      dropdown.style.display = "none";
+    }
+  });
 </script>
 
 </body>
