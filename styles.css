@@ -8,11 +8,10 @@ body {
     font-family: Arial, sans-serif;
   }
 
-html {
+  html {
     scroll-behavior: smooth;
   }
   
-  /* Navbar */
   .navbar {
     background-color: rgb(51, 146, 51);
     font-family: calibri;
@@ -25,6 +24,7 @@ html {
     left: 0;
     z-index: 1000;
   }
+
   
   .navdiv {
     display: flex;
@@ -36,7 +36,7 @@ html {
   .logo a {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(102, 253, 125);
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
   
@@ -46,7 +46,7 @@ html {
   }
   
   li a {
-    color: rgb(71, 255, 80);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     margin-right: 15px;
@@ -60,7 +60,7 @@ html {
     border-radius: 5px;
   }
   
-  /* Hamburger Menu */
+ 
   .menu-icon {
     font-size: 30px;
     cursor: pointer;
@@ -97,7 +97,7 @@ html {
     background-color: #3023235d;
   }
   
-  /* Main Layout */
+  
   .container {
     display: flex;
     align-items: center;
@@ -137,11 +137,11 @@ html {
     margin: 40px 0;
   }
   
-  /* Services */
+
   .services-section {
     padding: 10px;
     text-align: center;
-    background: #3cc453;
+    background: #27ad3e;
     color: white;
     font-size: 20px;
   }
@@ -179,7 +179,7 @@ html {
     color: black;
   }
   
-  /* Contact */
+
   .contact-section {
     display: flex;
     justify-content: center;
